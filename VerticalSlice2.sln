@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AprendizadoVerticalSlice", "AprendizadoVerticalSlice.csproj", "{24AF1271-F8A9-4BA1-21E9-492AE067B7F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24AF1271-F8A9-4BA1-21E9-492AE067B7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AF1271-F8A9-4BA1-21E9-492AE067B7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AF1271-F8A9-4BA1-21E9-492AE067B7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AF1271-F8A9-4BA1-21E9-492AE067B7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A353DDD-A784-4002-99C7-2850448E0ADA}
+	EndGlobalSection
+EndGlobal

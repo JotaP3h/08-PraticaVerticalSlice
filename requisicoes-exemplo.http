@@ -1,0 +1,98 @@
+# Exemplos de Requisições HTTP
+# Use este arquivo com REST Client extension no VS Code
+# ou copie as requisições para Postman/Insomnia
+
+### Variáveis
+@baseUrl = https://localhost:7xxx
+@contentType = application/json
+
+###############################################
+# CATEGORIAS
+###############################################
+
+### 1. Obter todas as categorias
+GET {{baseUrl}}/api/categorias
+
+### 2. Criar uma nova categoria
+POST {{baseUrl}}/api/categorias
+Content-Type: {{contentType}}
+
+{
+  "nome": "Informática",
+  "descricao": "Produtos de informática e acessórios"
+}
+
+###############################################
+# PRODUTOS
+###############################################
+
+### 3. Obter todos os produtos
+GET {{baseUrl}}/api/produtos
+
+### 4. Obter produto por ID
+GET {{baseUrl}}/api/produtos/1
+
+### 5. Obter produto inexistente (deve retornar 404)
+GET {{baseUrl}}/api/produtos/999
+
+### 6. Criar um novo produto
+POST {{baseUrl}}/api/produtos
+Content-Type: {{contentType}}
+
+{
+  "nome": "Teclado Mecânico",
+  "descricao": "Teclado mecânico RGB com switches blue",
+  "preco": 299.90,
+  "quantidadeEstoque": 30,
+  "categoriaId": 1
+}
+
+### 7. Criar produto com dados inválidos (deve retornar 400)
+POST {{baseUrl}}/api/produtos
+Content-Type: {{contentType}}
+
+{
+  "nome": "",
+  "descricao": "Teste",
+  "preco": -10,
+  "quantidadeEstoque": 5,
+  "categoriaId": 1
+}
+
+### 8. Criar produto com categoria inexistente (deve retornar 400)
+POST {{baseUrl}}/api/produtos
+Content-Type: {{contentType}}
+
+{
+  "nome": "Produto Teste",
+  "descricao": "Teste",
+  "preco": 100,
+  "quantidadeEstoque": 5,
+  "categoriaId": 999
+}
+
+### 9. Atualizar um produto
+PUT {{baseUrl}}/api/produtos/1
+Content-Type: {{contentType}}
+
+{
+  "nome": "Notebook Dell Atualizado",
+  "descricao": "Notebook Dell Inspiron 15 com SSD",
+  "preco": 3800.00,
+  "quantidadeEstoque": 8,
+  "categoriaId": 1
+}
+
+### 10. Excluir um produto
+DELETE {{baseUrl}}/api/produtos/2
+
+###############################################
+# ATIVIDADE PRÁTICA
+# Depois de implementar "ObterCategoriaPorId"
+###############################################
+
+### 11. Obter categoria por ID (IMPLEMENTAR)
+# GET {{baseUrl}}/api/categorias/1
+
+### 12. Obter categoria inexistente (IMPLEMENTAR - deve retornar 404)
+# GET {{baseUrl}}/api/categorias/999
