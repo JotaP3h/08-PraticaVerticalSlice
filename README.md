@@ -24,7 +24,7 @@ Bem-vindo ao roteiro de aprendizagem sobre **Vertical Slice Architecture**! Este
 - ✅ Como implementar novas funcionalidades do zero
 
 ### Pré-requisitos:
-- .NET 8 SDK instalado
+- .NET 9 SDK instalado
 - Visual Studio 2022, VS Code ou Rider
 - Conhecimentos básicos de C# e ASP.NET Core
 - Conhecimentos básicos de APIs REST
@@ -545,8 +545,7 @@ Sua implementação está correta se:
 6. ✅ A aplicação compila sem erros
 7. ✅ O endpoint retorna 200 com os dados quando a categoria existe
 8. ✅ O endpoint retorna 404 quando a categoria não existe
-9. ✅ O Swagger documenta o endpoint corretamente
-10. ✅ Os nomes estão em português
+
 
 ### 💡 Dicas
 
@@ -607,16 +606,22 @@ Se você terminou a atividade principal e quer mais desafios:
    git add .
    git commit -m "Implementa ObterCategoriaPorId"
    ```
+5. **Demonstre a sua funcionalidae implementada**
+   - Tira uma cópia da tela do scalar com a sua funcionalidade implementada (vide *Guia de Testes*)
+   
 
-5. **Envie para seu fork**
+7. **Envie para seu fork**
    ```bash
    git push origin minha-implementacao
    ```
 
-6. **Submeta o link do seu repositório na atividade atribuída no TEAMS**
+8. **Submeta o link do seu repositório na atividade atribuída no TEAMS**
    - Envie o link do seu fork no GitHub
    - Formato: `https://github.com/seu-usuario/08-PraticaVerticalSlice`
    - Certifique-se de que o repositório está público
+   - Envie uma cópia de tela do scalar mostrando a sua funcionaliade implementada
+
+
 
 
 ### Checklist de Entrega:
@@ -630,6 +635,7 @@ Se você terminou a atividade principal e quer mais desafios:
 - [ ] Código comentado em português
 - [ ] README lido completamente
 - [ ] Link do repositório enviado
+- [ ] Cópia da tela mostrando a sua funcionalidade implementada
 
 ---
 
